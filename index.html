@@ -4,128 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marquiza Crochê</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home - Laura</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <h3>MARQUIZA</h3>
+    <!--STARS-->
+    <section class="wrapper">
+        <div id="star"></div>
+        <div id="star2"></div>
+        <div id="star3"></div>
+        <!--NAVBAR-->
+        <header>
+            <div class="flex-container">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="index.html"> <STRong>HOME</STRong></a></li>
+                        <li><a href="aboutme.html"> <strong>ABOUT ME</strong></a></li>
+                        <li><a href="portfolio.html"><strong>PORTFOLIO</strong></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <br> <br>
+        <!--PRINCIPAL-->
+        <div id="title">
+            <span><strong>Welcome to Laura's portfolio!</strong></span>
+            <div id="description">
+                <p style="text-align: center; font-size: 20px;"> Here you will find informations about me, <br>some
+                    of my
+                    projects
+                    and my
+                    likes!
+                </p>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#produtos" data-translate="nav-produtos">Produtos</a></li>
-                <li><a href="#linhas" data-translate="nav-linhas">Linhas</a></li>
-                <li><a href="#medidas" data-translate="nav-medidas">Medidas</a></li>
-                <li><a href="#feedbacks" data-translate="nav-feedbacks">Feedbacks</a></li>
-                <li><a href="#politica" data-translate="nav-politica">Política</a></li>
-                <li><a href="#contato" data-translate="nav-contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="bem-vindo" class="bem-vindo">
-            <div class="conteudo">
-                <h1 data-translate="conteudo-title-1">Bem vindo à <span class="highlight">MARQUIZA CROCHÊ</span></h1>
-            </div>
-            <div class="conteudo-image">
-                <img src="aguaviva.jpg" alt="Agua-viva" id="aguaviva-img">
-            </div>
-        </section>
-        <section id="produtos" class="produtos">
-            <h2 data-translate="produtos-title">Nossos Produtos</h2>
-            <div class="card-container">
-                <div class="card">
-                    <img src="ecobag.jpeg" alt="">
-                    <div class="card-content">
-                        <h3> Ecobag</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="saiaIara.jpeg" alt="">
-                    <div class="card-content">
-                        <h3> Saia Iara</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="sobretudo.jpeg" alt="">
-                    <div class="card-content">
-                        <h3> Sei la o nome</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="topcoral.jpeg" alt="">
-                    <div class="card-content">
-                        <h3>Top Coral</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="linhas" class="linhas">
-            <h2 data-translate="linhas-title">Linhas Disponíveis</h2>
-        </section>
-        <section id="medidas" class="medidas">
-            <h2 data-translate="medidas-title">Confira Sua Medida</h2>
-        </section>
-        <section id="feedbacks" class="feedbacks">
-            <h2 data-translate="feedbacks">Feedbacks de Clientes</h2>
-            <div class="card-container2">
-                <div class="card2">
-                    <div class="row">
-                        <img class="perfil" src="perfiljamile.jpeg" alt="">
-                        <h4><b>@jamgmes</b></h4>
-                    </div>
-                    <img class="post" src="jamile.jpeg" alt="">
-                    <p>Ficou perfeito, seu trabalho é impecável!! </p>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <div class="card2">
-                    <div class="row">
-                        <img class="perfil" src="maria.jpeg" alt="">
-                        <h4><b>@helle <br>nurquisa</b></h4>
-                    </div>
-                    <p>O caimento no corpo fica incrível! Adorei os detalhes e a delicadeza do trabalho manual.
-                     <br>Dá para ver o capricho em cada ponto!</p>
-                     <br> <br>
-                    <span class="fa fa-star "></span>
-                    <span class="fa fa-star "></span>
-                    <span class="fa fa-star "></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-                <div class="card2">
-                    <div class="row">
-                        <img class="perfil" src="perfilesther.png" alt="">
-                        <h4><b>@stheercs</b></h4>
-                    </div>
-                    <img class="post" src="esther.png" alt="">
-                    <p>Amei! Ficou perfeito. Você arrasou demais!</p>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-            </div>
-        </section>
-        <section id="politica" class="politica">
-            <h2 data-translate="politica">Política de Devolução</h2>
-        </section>
-        <section id="contato" class="contato">
-            <h2 data-translate="contato">Peça o SEU!</h2>
-        </section>
-    </main>
+    </section>
 </body>
 
 </html>
