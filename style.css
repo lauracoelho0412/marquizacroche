@@ -81,6 +81,7 @@ a {
     color: var(--primary-color);
 }
 
+/*NAVBAR*/
 nav {
     display: block;
     unicode-bidi: isolate;
@@ -122,6 +123,7 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+/*Bem-vindo section*/
 .bem-vindo {
     display: flex;
     justify-content: space-between;
@@ -161,6 +163,7 @@ nav ul li a:hover::after {
     height: 350px;
 }
 
+/*Card Produtos*/
 .card-container {
     display: flex;
     justify-content: center;
@@ -202,36 +205,41 @@ nav ul li a:hover::after {
     line-height: 1.3;
 }
 
-table{
+/*Table Medidas*/
+table {
     padding: 20px;
     width: 100%;
+    border-collapse: collapse;
 }
 
-tr{
+tr {
     height: 90px;
-    text-align: center; 
+    text-align: center;
 }
 
 tr:hover {
     background-color: var(--light-color);
-    border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
 
-th{
+th {
     background-color: var(--gray-color);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
 
-.tamanhos{
+th,
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+.tamanhos {
     background-color: var(--secondary-color);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
 
-
-
+/*Card Feedbacks*/
 .card-container2 {
     display: flex;
     justify-content: center;
@@ -239,6 +247,7 @@ th{
     margin-top: 60px;
     gap: 50px;
 }
+
 .card2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -258,13 +267,13 @@ th{
     padding: 10px;
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.post{
+.post {
     width: 100%;
     height: auto;
     border: 2px solid var(--primary-color);
