@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="javascript" href="script.js">
 </head>
 
 <body>
@@ -15,16 +16,17 @@
         <div class="logo">
             <h3>MARQUIZA</h3>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#produtos" data-translate="nav-produtos">Produtos</a></li>
-                <li><a href="#linhas" data-translate="nav-linhas">Linhas</a></li>
-                <li><a href="#medidas" data-translate="nav-medidas">Medidas</a></li>
-                <li><a href="#feedbacks" data-translate="nav-feedbacks">Feedbacks</a></li>
-                <li><a href="#politica" data-translate="nav-politica">Política</a></li>
-                <li><a href="#contato" data-translate="nav-contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div id="navbar" class="topnav">
+                <a href="#produtos" data-translate="nav-produtos">Produtos</a>
+                <a href="#linhas" data-translate="nav-linhas">Linhas</a>
+                <a href="#medidas" data-translate="nav-medidas">Medidas</a>
+                <a href="#feedbacks" data-translate="nav-feedbacks">Feedbacks</a>
+                <a href="#politica" data-translate="nav-politica">Política</a>
+                <a href="#contato" data-translate="nav-contato">Contato</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+        </div>
     </header>
     <main>
         <section id="bem-vindo" class="bem-vindo">
