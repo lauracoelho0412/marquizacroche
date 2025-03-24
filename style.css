@@ -29,7 +29,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 10%;
+    padding: 30px 0px 10px 30px;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -83,11 +83,13 @@ a {
 
 /*NAVBAR*/
 
-.logo h3 {
+.topnav .logo {
     font-size: 1.8rem;
     margin: 0;
     color: var(--primary-color);
     font-family: "Shrikhand", serif;
+    margin: 0px 100px 0px 0px;
+    overflow: hidden;
 }
 
 .topnav a{
@@ -119,10 +121,6 @@ a {
     overflow: hidden;
 }
 
-.topnav .ponto{
-    display: none;
-    overflow: hidden;
-}
 /*Bem-vindo section*/
 .bem-vindo {
     display: flex;
@@ -283,7 +281,7 @@ td {
     color: var(--secondary-color);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
     .topnav a:not(:first-child){
         display: none;
     }
@@ -292,9 +290,7 @@ td {
         float: right;
         display: block;
     }
-}
 
-@media screen and (max-width: 750px) {
     .topnav.responsive {
         position: relative;
     }
@@ -312,7 +308,7 @@ td {
     }
 }
 
-@media(max-width: 768px){
+@media(max-width: 700px){
     h1 {
         font-size: 2.5rem;
     }
