@@ -9,7 +9,7 @@
     --primary-color: #002a54;
     --secondary-color: #97bbd9;
     --accent-color: #FFAB5B;
-    --light-color: #FFF2DB;
+    --light-color: #ffeac6;
     --gray-color: #64748b;
     --border-radius: 8px;
     --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -163,18 +163,26 @@ a {
 }
 
 /*Card Produtos*/
-.center {
-    align-items: center;
+.products {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
+    overflow-x: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: var(--light-color);
 }
 
 .wrapper {
     display: flex;
     grid-gap: 1em;
-    overflow: hidden;
     width: 57rem;
 }
 
@@ -218,37 +226,6 @@ a {
     line-height: 1.3;
 }
 
-.map {
-    margin-top: 1em;
-}
-
-.map button {
-    all: unset;
-    background: var(--light-color);
-    cursor: pointer;
-    margin: 0 0.125em;
-    position: relative;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border-radius: 100%;
-    height: 1em;
-    width: 1em;
-}
-
-.map button.active:after {
-    background: var(--accent-color);
-    content: "";
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    border-radius: 100%;
-    height: 0.5em;
-    width: 0.5em;
-}
-
 /*Table Medidas*/
 table {
     padding: 20px;
@@ -284,21 +261,23 @@ td {
 }
 
 /*Card Feedbacks*/
-.card-container2 {
+.coments {
     display: flex;
+    flex-direction: column;
+    height: 100%;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 60px;
-    gap: 50px;
+    overflow-x: scroll;
 }
 
 .card2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
-    width: 200px;
+    width: 250px;
+    height: 400px;
     background-color: var(--light-color);
     padding: 8px 16px;
+    margin: 20px;
 }
 
 .card2:hover {
@@ -306,7 +285,7 @@ td {
 }
 
 .perfil {
-    width: 50%;
+    width: 35%;
     border-radius: 50%;
     padding: 10px;
 }
@@ -318,7 +297,7 @@ td {
 }
 
 .post {
-    width: 100%;
+    width: 90%;
     height: auto;
     border: 2px solid var(--primary-color);
 }
