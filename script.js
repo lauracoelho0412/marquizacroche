@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+//document.addEventListener("DOMContentLoaded", (event) => {
 
   console.log("js ok");
 
@@ -10,4 +10,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
       x.className = "topnav";
     }
   }
-})
+//})
