@@ -1,6 +1,6 @@
 //document.addEventListener("DOMContentLoaded", (event) => {
 
-  console.log("js ok");
+  console.log("Marquiza site loaded");
 
   function myFunction() {
     var x = document.getElementById("navbar");
