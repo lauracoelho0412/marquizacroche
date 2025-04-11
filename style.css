@@ -27,7 +27,6 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 30px 0px 10px 30px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -323,6 +322,33 @@ td {
     color: var(--secondary-color);
 }
 
+.mode-selector {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.mode-btn {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.mode-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.mode-btn.active {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    border-color: var(--light-color);
+}
+
 @media screen and (max-width: 700px) {
     .topnav a:not(:first-child) {
         display: none;
@@ -372,7 +398,10 @@ td {
         order: 1;
     }
 
-    .map{
-        
+    .mode-selector {
+        margin: 10px auto;
+        order: 3;
+        width: 100%;
+        justify-content: center;
     }
 }
