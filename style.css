@@ -8,9 +8,10 @@
 :root {
     --primary-color: #002a54;
     --secondary-color: #97bbd9;
-    --accent-color:#194c80;
+    --accent-color: #194c80;
     --light-color: #ffeac6;
     --main-white: #f0f0f0;
+    --terciary-color:#0d1544;
     --white-color: 255, 255, 255;
     --dark-color: 0, 42, 84;
     --border-radius: 8px;
@@ -31,7 +32,8 @@ header {
     display: flex;
     align-items: center;
     padding: 30px 0px 10px 10px;
-    background-color: rgba(var(--white-color), 0.9);;
+    background-color: rgba(var(--white-color), 0.9);
+    ;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -121,35 +123,52 @@ a {
 }
 
 /*Dark and Light Mode*/
-body.dark-mode{
+body.dark-mode {
     background-color: var(--primary-color);
     color: var(--main-white);
 }
-header.dark-mode{
-    background-color: rgba(var(--dark-color), 0.9);;
+
+header.dark-mode {
+    background-color: rgba(var(--dark-color), 0.9);
+    ;
     color: var(--main-white);
 }
-h2.dark-mode{
+
+h2.dark-mode {
     color: var(--main-white);
 }
-.banners.dark-mode{
+
+.banners.dark-mode {
     background-color: var(--accent-color);
 }
-.card.dark-mode{
+
+.card.dark-mode {
     background-color: var(--secondary-color);
 }
-.card2.dark-mode{
+
+.card2.dark-mode {
     background-color: var(--secondary-color);
 }
-.topnav a.dark-mode{
+
+.end.dark-mode{
+    background-color: var(--terciary-color);
+}
+.topnav a.dark-mode {
     color: var(--main-white);
 }
-th.dark-mode{
+
+th.dark-mode {
     background-color: var(--secondary-color);
 }
-::-webkit-scrollbar-thumb.dark-mode{
-    background-color: var(--secondary-color);
+
+.mode-btn.dark-mode {
+    color: var(--main-white);
 }
+
+.contact a.dark-mode {
+    color: var(--main-white);
+}
+
 /*Bem-vindo section*/
 .bem-vindo {
     display: flex;
@@ -215,6 +234,7 @@ th.dark-mode{
     justify-content: center;
     overflow-x: scroll;
 }
+
 /*Scroll bar*/
 ::-webkit-scrollbar {
     width: 10px;
@@ -287,7 +307,7 @@ th.dark-mode{
     padding: 20px;
     overflow: hidden;
 }
- 
+
 /*Table Medidas*/
 table {
     padding: 20px;
@@ -376,6 +396,7 @@ td {
 
 .mode-btn {
     background: none;
+    color: var(--primary-color);
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px 10px;
@@ -385,8 +406,24 @@ td {
     transition: all 0.3s ease;
 }
 
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+    padding: 0 10%;
+    margin-top: 40px;
+}
+
+.card4 {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
 .mode-btn:hover {
     background-color: #f0f0f0;
+    color: var(--primary-color);
 }
 
 .mode-btn.active {
@@ -395,6 +432,11 @@ td {
     border-color: var(--light-color);
 }
 
+.end{
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
 @media screen and (max-width: 700px) {
     .topnav a:not(:first-child, :last-child) {
         display: none;
@@ -415,8 +457,9 @@ td {
     }
 
     .topnav .logo {
-        margin:0px 17px 0px 0px;
+        margin: 0px 17px 0px 0px;
     }
+
     .topnav.responsive a {
         float: none;
         display: block;
@@ -450,5 +493,9 @@ td {
         margin: 10px auto;
         order: 3;
         justify-content: center;
+    }
+    .contact{
+        flex-direction: column;
+        gap: 0px;
     }
 }

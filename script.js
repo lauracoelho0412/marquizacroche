@@ -28,6 +28,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.querySelectorAll(".card2").forEach(card2 => card2.classList.add("dark-mode"));
     document.querySelectorAll(".topnav a").forEach(a => a.classList.add("dark-mode"));
     document.querySelectorAll("th").forEach(t => t.classList.add("dark-mode"));
+    document.querySelectorAll(".mode-btn").forEach(mode => mode.classList.add("dark-mode"));
+    document.querySelectorAll(".contact a").forEach(contact => contact.classList.add("dark-mode"));
+    document.querySelectorAll(".end").forEach(end => end.classList.add("dark-mode"));
   }
 
   function applyLightMode(){
@@ -42,6 +45,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.querySelectorAll(".card2").forEach(card2 => card2.classList.remove("dark-mode"));
     document.querySelectorAll(".topnav a").forEach(a => a.classList.remove("dark-mode"));
     document.querySelectorAll("th").forEach(t => t.classList.remove("dark-mode"));
+    document.querySelectorAll(".mode-btn").forEach(mode => mode.classList.remove("dark-mode"));
+    document.querySelectorAll(".contact a").forEach(contact => contact.classList.remove("dark-mode"));
+    document.querySelectorAll(".end").forEach(end => end.classList.remove("dark-mode"));
   }
   darkBtn.addEventListener('click', function () {
     applyDarkMode();
