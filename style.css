@@ -8,9 +8,11 @@
 :root {
     --primary-color: #002a54;
     --secondary-color: #97bbd9;
-    --accent-color: #FFAB5B;
+    --accent-color:#194c80;
     --light-color: #ffeac6;
-    --gray-color: #64748b;
+    --main-white: #f0f0f0;
+    --white-color: 255, 255, 255;
+    --dark-color: 0, 42, 84;
     --border-radius: 8px;
     --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
@@ -29,7 +31,7 @@ header {
     display: flex;
     align-items: center;
     padding: 30px 0px 10px 30px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(var(--white-color), 0.9);;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -50,7 +52,6 @@ h1 {
 
 h2 {
     font-size: 2.2rem;
-    color: var(--primary-color);
     position: relative;
     display: inline-block;
     margin-bottom: 2rem;
@@ -71,7 +72,6 @@ section {
 }
 
 .highlight {
-    color: var(--primary-color);
     font-family: "Shrikhand", serif;
 }
 
@@ -85,7 +85,6 @@ a {
 .topnav .logo {
     font-size: 1.8rem;
     margin: 0;
-    color: var(--primary-color);
     font-family: "Shrikhand", serif;
     margin: 0px 80px 0px 0px;
     overflow: hidden;
@@ -116,15 +115,41 @@ a {
     width: 100%;
 }
 
-.botao {
-    overflow: hidden;
-}
-
 .topnav .icon {
     display: none;
     overflow: hidden;
 }
 
+/*Dark and Light Mode*/
+body.dark-mode{
+    background-color: var(--primary-color);
+    color: var(--main-white);
+}
+header.dark-mode{
+    background-color: rgba(var(--dark-color), 0.9);;
+    color: var(--main-white);
+}
+h2.dark-mode{
+    color: var(--main-white);
+}
+.banners.dark-mode{
+    background-color: var(--accent-color);
+}
+.card.dark-mode{
+    background-color: var(--secondary-color);
+}
+.card2.dark-mode{
+    background-color: var(--secondary-color);
+}
+.topnav a.dark-mode{
+    color: var(--main-white);
+}
+th.dark-mode{
+    background-color: var(--secondary-color);
+}
+::-webkit-scrollbar-thumb.dark-mode{
+    background-color: var(--secondary-color);
+}
 /*Bem-vindo section*/
 .bem-vindo {
     display: flex;
@@ -190,7 +215,7 @@ a {
     justify-content: center;
     overflow-x: scroll;
 }
-
+/*Scroll bar*/
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -281,7 +306,7 @@ tr:hover {
 }
 
 th {
-    background-color: var(--gray-color);
+    background-color: var(--light-color);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
@@ -376,7 +401,6 @@ td {
     }
 
     .topnav a.icon {
-        float: right;
         display: block;
     }
 
@@ -390,6 +414,9 @@ td {
         top: 0;
     }
 
+    .topnav .logo {
+        margin:0px 24px 0px 0px;
+    }
     .topnav.responsive a {
         float: none;
         display: block;
@@ -422,7 +449,6 @@ td {
     .mode-selector {
         margin: 10px auto;
         order: 3;
-        width: 100%;
         justify-content: center;
     }
 }
