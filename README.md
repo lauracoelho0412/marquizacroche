@@ -7,6 +7,3 @@ This website was build to a crochet store, located in Recife, Brazil
 - HTML
 - CSS
 - JavaScript
-
-*** html
-<html></html>
