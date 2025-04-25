@@ -4,6 +4,6 @@
 This website was build to a crochet store, located in Recife, Brazil
 
 ## Sources that I used
--HTML
--CSS
--JavaScript
+- HTML
+- CSS
+- JavaScript
