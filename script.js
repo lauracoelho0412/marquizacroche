@@ -5,7 +5,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const lightBtn = document.getElementById("light-mode");
   const darkBtn = document.getElementById("dark-mode");
 
-  darkBtn.addEventListener('click', function () {
+  function setCookie(name, value, days) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = `${name}=${value}; expires=${expires}; path=/`;
+  }
+  
+  function getCookie(name) {
+    return document.cookie.split('; ').reduce((acc, cookie) => {
+      const [key, val] = cookie.split('=');
+      return key === name ? val : acc;
+    }, '');
+  }
+  function applyDarkMode(){
+    darkBtn.classList.add("active")
+    lightBtn.classList.remove("active")
+
     document.body.classList.add("dark-mode");
     document.querySelector("header").classList.add("dark-mode");
     document.querySelectorAll("h2").forEach(h => h.classList.add("dark-mode"));
@@ -14,12 +28,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.querySelectorAll(".card2").forEach(card2 => card2.classList.add("dark-mode"));
     document.querySelectorAll(".topnav a").forEach(a => a.classList.add("dark-mode"));
     document.querySelectorAll("th").forEach(t => t.classList.add("dark-mode"));
-    document.querySelectorAll(webkit-scrollbar-thumb).forEach(w => w.classList.add("dark-mode"));
-    darkBtn.classList.add("active")
-    lightBtn.classList.remove("active")
-  })
+  }
 
-  lightBtn.addEventListener('click', function () {
+  function applyLightMode(){
+    lightBtn.classList.add("active")
+    darkBtn.classList.remove("active")
+
     document.body.classList.remove("dark-mode");
     document.querySelector("header").classList.remove("dark-mode");
     document.querySelectorAll("h2").forEach(h => h.classList.remove("dark-mode"));
@@ -28,9 +42,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.querySelectorAll(".card2").forEach(card2 => card2.classList.remove("dark-mode"));
     document.querySelectorAll(".topnav a").forEach(a => a.classList.remove("dark-mode"));
     document.querySelectorAll("th").forEach(t => t.classList.remove("dark-mode"));
-    lightBtn.classList.add("active")
-    darkBtn.classList.remove("active")
-  })
+  }
+  darkBtn.addEventListener('click', function () {
+    applyDarkMode();
+    setCookie('theme', 'dark', 30);
+  });
+  
+  lightBtn.addEventListener('click', function () {
+    applyLightMode();
+    setCookie('theme', 'light', 30);
+  });
+  
+  window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = getCookie('theme');
+    if (savedTheme === 'dark') {
+      applyDarkMode();
+    } else {
+      applyLightMode();
+    }
+  });
+
 })
 
 function myFunction() {
