@@ -6,10 +6,10 @@
 }
 
 :root {
-    --primary-color: #002a54;
-    --secondary-color: #97bbd9;
-    --accent-color: #194c80;
-    --light-color: #ffeac6;
+    --primary-color: #4E66C0;
+    --secondary-color: #FFF4E7;
+    --accent-color: #9BABE3;
+    --light-color:  #F8E1C5;
     --main-white: #f0f0f0;
     --terciary-color:#0d1544;
     --white-color: 255, 255, 255;
@@ -19,8 +19,9 @@
     --transition: all 0.3s ease;
 }
 
+
 body {
-    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-family: "Urbanist";
     line-height: 1.7;
     color: var(--primary-color);
     background-color: white;
@@ -122,6 +123,15 @@ a {
     overflow: hidden;
 }
 
+.conchas{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.conchas img{
+    width:20%
+}
 /*Dark and Light Mode*/
 body.dark-mode {
     background-color: var(--primary-color);
@@ -138,16 +148,20 @@ h2.dark-mode {
     color: var(--main-white);
 }
 
+h1.dark-mode{
+    color: var(--primary-color);
+}
+
 .banners.dark-mode {
     background-color: var(--accent-color);
 }
 
 .card.dark-mode {
-    background-color: var(--secondary-color);
+    background-color: var(--terciary-color);
 }
 
 .card2.dark-mode {
-    background-color: var(--secondary-color);
+    background-color: var(--terciary-color);
 }
 
 .end.dark-mode{
@@ -157,15 +171,16 @@ h2.dark-mode {
     color: var(--main-white);
 }
 
-th.dark-mode {
-    background-color: var(--secondary-color);
+th.dark-mode,
+td.dark-mode {
+    background-color: var(--terciary-color);
 }
 
 .mode-btn.dark-mode {
     color: var(--main-white);
 }
 .card4.dark-mode{
-    background-color: var(--secondary-color);
+    background-color: var(--terciary-color);
 }
 .contact a.dark-mode {
     color: var(--main-white);
@@ -207,8 +222,8 @@ th.dark-mode {
 }
 
 .conteudo-image img {
-    width: 350px;
-    height: 350px;
+    width: auto;
+    height: auto;
 }
 
 /*Banner section*/
@@ -322,6 +337,23 @@ th.dark-mode {
     padding: 20px;
 }
 
+#centro{
+    display: flex;
+    justify-content: center;
+}
+
+#imgestrela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#estrela{
+    width: 35%;
+    height: 35%;
+    
+}
+
 /*Table Medidas*/
 table {
     padding: 20px;
@@ -424,7 +456,6 @@ td {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10rem;
     padding: 0 10%;
     margin-top: 40px;
 }

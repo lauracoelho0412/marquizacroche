@@ -28,10 +28,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.querySelectorAll(".card2").forEach(card2 => card2.classList.add("dark-mode"));
     document.querySelectorAll(".topnav a").forEach(a => a.classList.add("dark-mode"));
     document.querySelectorAll("th").forEach(t => t.classList.add("dark-mode"));
+    document.querySelectorAll("td.tamanhos").forEach(d => d.classList.add("dark-mode"));
     document.querySelectorAll(".mode-btn").forEach(mode => mode.classList.add("dark-mode"));
     document.querySelectorAll(".contact a").forEach(contact => contact.classList.add("dark-mode"));
     document.querySelectorAll(".end").forEach(end => end.classList.add("dark-mode"));
     document.querySelectorAll(".card4").forEach(card4 => card4.classList.add("dark-mode"));
+    document.querySelectorAll("h1").forEach(h1 => h1.classList.add("dark-mode"));
   }
 
   function applyLightMode(){
@@ -45,11 +47,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.querySelectorAll(".card").forEach(card => card.classList.remove("dark-mode"));
     document.querySelectorAll(".card2").forEach(card2 => card2.classList.remove("dark-mode"));
     document.querySelectorAll(".topnav a").forEach(a => a.classList.remove("dark-mode"));
-    document.querySelectorAll("th").forEach(t => t.classList.remove("dark-mode"));
+    document.querySelectorAll("th.tamanhos").forEach(t => t.classList.remove("dark-mode"));
+    document.querySelectorAll("td").forEach(d => d.classList.remove("dark-mode"));
     document.querySelectorAll(".mode-btn").forEach(mode => mode.classList.remove("dark-mode"));
     document.querySelectorAll(".contact a").forEach(contact => contact.classList.remove("dark-mode"));
     document.querySelectorAll(".end").forEach(end => end.classList.remove("dark-mode"));
     document.querySelectorAll(".card4").forEach(card4 => card4.classList.remove("dark-mode"));
+    document.querySelectorAll("h1").forEach(h1 => h1.classList.remove("dark-mode"));
   }
   darkBtn.addEventListener('click', function () {
     applyDarkMode();
